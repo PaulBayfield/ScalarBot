@@ -1,0 +1,5 @@
+services:
+  scalar-bot:
+    container_name: scalar-bot
+    build: .
+    restart: unless-stopped
