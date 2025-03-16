@@ -15,6 +15,7 @@ class Commands(commands.Cog):
     # /scalar
 
     @app_commands.command(name="scalar", description="Scalar information")
+    @app_commands.allowed_installs(guilds=True, users=True)
     @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
     async def scalar(
         self, 
